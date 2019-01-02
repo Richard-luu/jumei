@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Home from '@/containers/Home';
-import City from '@/containers/City';
+import Center from '@/containers/Home/HomeCenter';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <HashRouter>
         <Switch>
-          <Route path='/city' component={City}></Route>
+          <Route path='/center' component={Center}></Route>
           <Route path="/" component={Home}></Route>
         </Switch>
       </HashRouter>
